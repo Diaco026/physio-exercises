@@ -1,1 +1,75 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PhysioCare</title><link rel="stylesheet" href="style.css"></head><body><main><div class="brand">PhysioCare</div><section class="hero"><div class="badge">کتابخانه تمرین‌های فیزیوتراپی</div><h1>سطح تمرین خود را انتخاب کنید</h1><p>برای شروع، یکی از سه سطح تمرینی را انتخاب کنید.</p></section><section class="levels"><button class="level easy" onclick="selectLevel('آسان')"><span class="icon">🌱</span><span class="title">آسان</span><span class="desc">مناسب شروع توانبخشی و حرکات سبک</span><span class="arrow">←</span></button><button class="level medium" onclick="selectLevel('متوسط')"><span class="icon">⚡</span><span class="title">متوسط</span><span class="desc">تمرین‌های با شدت و چالش بیشتر</span><span class="arrow">←</span></button><button class="level hard" onclick="selectLevel('سخت')"><span class="icon">🔥</span><span class="title">سخت</span><span class="desc">تمرین‌های پیشرفته‌تر و چالش‌برانگیز</span><span class="arrow">←</span></button></section><footer>PhysioCare • تمرین‌های فیزیوتراپی</footer></main><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhysioCare | تمرین‌های فیزیوتراپی</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">PhysioCare</div>
+</header>
+
+<main>
+  <section id="levelsPage" class="page-section">
+    <div class="hero">
+      <span class="badge">کتابخانه تمرین‌های فیزیوتراپی</span>
+      <h1>سطح تمرین خود را انتخاب کنید</h1>
+      <p>ابتدا سطح مناسب تمرین را انتخاب کنید.</p>
+    </div>
+
+    <div class="levels">
+      <button class="level easy" onclick="showBodyParts('آسان')">
+        <span class="icon">🌱</span>
+        <strong>آسان</strong>
+        <span>تمرین‌های مناسب شروع توانبخشی و حرکات سبک</span>
+        <b>←</b>
+      </button>
+      <button class="level medium" onclick="showBodyParts('متوسط')">
+        <span class="icon">⚡</span>
+        <strong>متوسط</strong>
+        <span>تمرین‌های با شدت و چالش بیشتر</span>
+        <b>←</b>
+      </button>
+      <button class="level hard" onclick="showBodyParts('سخت')">
+        <span class="icon">🔥</span>
+        <strong>سخت</strong>
+        <span>تمرین‌های پیشرفته‌تر و چالش‌برانگیز</span>
+        <b>←</b>
+      </button>
+    </div>
+  </section>
+
+  <section id="bodyPage" class="page-section hidden">
+    <button class="back" onclick="backToLevels()">→ بازگشت به سطح تمرین</button>
+    <div class="body-head">
+      <span class="badge" id="selectedLevel"></span>
+      <h1>ناحیه مورد نظر را انتخاب کنید</h1>
+      <p>تمرین‌های مربوط به کدام قسمت بدن را می‌خواهید؟</p>
+    </div>
+
+    <div class="body-grid">
+      <button class="body-card">🧠<strong>سر و صورت</strong></button>
+      <button class="body-card">🦷<strong>فک و مفصل گیجگاهی</strong></button>
+      <button class="body-card">🦴<strong>گردن</strong></button>
+      <button class="body-card">💪<strong>شانه</strong></button>
+      <button class="body-card">🦾<strong>بازو و آرنج</strong></button>
+      <button class="body-card">✋<strong>مچ دست و دست</strong></button>
+      <button class="body-card">🫁<strong>قفسه سینه</strong></button>
+      <button class="body-card">🧍<strong>ستون فقرات و کمر</strong></button>
+      <button class="body-card">🫃<strong>شکم و لگن</strong></button>
+      <button class="body-card">🦵<strong>مفصل ران</strong></button>
+      <button class="body-card">🦵<strong>زانو</strong></button>
+      <button class="body-card">🦶<strong>مچ پا و ساق</strong></button>
+      <button class="body-card">🦶<strong>پا و انگشتان پا</strong></button>
+      <button class="body-card">🏃<strong>تعادل و راه رفتن</strong></button>
+      <button class="body-card">🧘<strong>تمرین‌های کل بدن</strong></button>
+    </div>
+  </section>
+</main>
+
+<footer>PhysioCare • تمرین‌های فیزیوتراپی</footer>
+<script src="script.js"></script>
+</body>
+</html>
