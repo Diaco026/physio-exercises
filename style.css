@@ -1,26 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;font-family:Vazirmatn,Tahoma,sans-serif;background:#f6f8fa;color:#17212b}
-header{max-width:1100px;margin:auto;padding:28px 30px}
-.brand{font-size:22px;font-weight:800;color:#176b87}
-.screen{max-width:1050px;margin:auto;padding:10px 28px 55px}
-.hero{text-align:center;padding:70px 10px 45px}
-.hero.compact{padding:30px 10px 38px}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f6f8fa;color:#18232d;font-family:Vazirmatn,Tahoma,sans-serif}
+header{max-width:1100px;margin:auto;padding:28px 30px}.brand{font-size:22px;font-weight:800;color:#176b87}
+.page{max-width:1050px;margin:auto;padding:0 28px 55px}.hero{text-align:center;padding:65px 10px 45px}.hero.compact{padding:35px 10px 38px}
 .badge{display:inline-block;background:#e5f3f7;color:#176b87;border-radius:30px;padding:9px 17px;font-size:13px;font-weight:600;margin-bottom:18px}
-h1{font-size:clamp(30px,5vw,48px);margin:0;line-height:1.45;font-weight:800}
-.hero p{color:#71808c;margin:16px 0 0;font-size:15px}
-.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.level{border:0;background:#fff;border-radius:24px;padding:38px 25px;min-height:220px;font-family:inherit;text-align:center;cursor:pointer;box-shadow:0 10px 30px rgba(30,50,70,.08);transition:.2s}
-.level:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(30,50,70,.14)}
-.level.easy{border-top:5px solid #5aa779}.level.medium{border-top:5px solid #d5a52e}.level.hard{border-top:5px solid #d45d57}
-.emoji{display:block;font-size:42px;margin-bottom:20px}
-.level strong{display:block;font-size:26px;margin-bottom:10px}
-.level small{display:block;color:#6c7883;font-size:14px;line-height:2}
-.hidden{display:none!important}
-.back{border:0;background:transparent;color:#176b87;font:500 15px Vazirmatn,Tahoma;cursor:pointer;padding:10px 0}
-.body-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.body-card{border:1px solid #e2e8ed;background:#fff;border-radius:18px;min-height:130px;padding:20px 10px;font-family:inherit;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:13px;font-size:30px;box-shadow:0 7px 22px rgba(30,50,70,.06);transition:.2s}
-.body-card:hover{transform:translateY(-4px);box-shadow:0 13px 30px rgba(30,50,70,.11)}
-.body-card strong{font-size:15px;color:#293742}
-footer{text-align:center;color:#a0aab2;font-size:12px;padding:15px 20px 35px}
-@media(max-width:800px){.levels{grid-template-columns:1fr}.body-grid{grid-template-columns:repeat(2,1fr)}header{padding:22px 18px}.screen{padding:5px 16px 40px}.hero{padding:50px 5px 30px}.level{min-height:165px;padding:28px 20px}}
+h1{margin:0;font-size:clamp(30px,5vw,48px);line-height:1.4;font-weight:800}.hero p{color:#71808c;margin:15px 0 0;font-size:15px}
+.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.level{text-decoration:none;color:inherit;background:white;border-radius:24px;min-height:220px;padding:38px 25px;text-align:center;display:block;box-shadow:0 10px 30px #1e324614;transition:.2s;border-top:5px solid}
+.level:hover,.body-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px #1e324620}.easy{border-color:#5aa779}.medium{border-color:#d5a52e}.hard{border-color:#d45d57}
+.emoji{display:block;font-size:42px;margin-bottom:18px}.level strong{display:block;font-size:26px;margin-bottom:10px}.level small{display:block;color:#6c7883;font-size:14px;line-height:2}
+.back{display:inline-block;color:#176b87;text-decoration:none;font-size:14px;padding:12px 0}.body-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.body-card{text-decoration:none;color:inherit;background:#fff;border:1px solid #e2e8ed;border-radius:18px;min-height:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;box-shadow:0 7px 22px #1e32460f;transition:.2s}
+.body-card span{font-size:30px}.body-card strong{font-size:15px;color:#293742}footer{text-align:center;color:#a0aab2;font-size:12px;padding:15px 20px 35px}
+@media(max-width:800px){.levels{grid-template-columns:1fr}.body-grid{grid-template-columns:repeat(2,1fr)}.page{padding:0 16px 40px}}

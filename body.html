@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PhysioCare | انتخاب قسمت بدن</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand">PhysioCare</div></header>
+<main class="page">
+  <a class="back" href="index.html">→ بازگشت به انتخاب سطح</a>
+  <section class="hero compact">
+    <div class="badge" id="levelBadge">سطح تمرین</div>
+    <h1>قسمت بدن را انتخاب کنید</h1>
+    <p>حالا ناحیه موردنظر برای تمرین را انتخاب کنید.</p>
+  </section>
+  <section class="body-grid">
+    <a class="body-card" href="#"><span>🧠</span><strong>سر و صورت</strong></a>
+    <a class="body-card" href="#"><span>🦷</span><strong>فک و مفصل گیجگاهی</strong></a>
+    <a class="body-card" href="#"><span>🦴</span><strong>گردن</strong></a>
+    <a class="body-card" href="#"><span>💪</span><strong>شانه</strong></a>
+    <a class="body-card" href="#"><span>🦾</span><strong>بازو و آرنج</strong></a>
+    <a class="body-card" href="#"><span>✋</span><strong>دست و مچ دست</strong></a>
+    <a class="body-card" href="#"><span>🫁</span><strong>قفسه سینه</strong></a>
+    <a class="body-card" href="#"><span>🧍</span><strong>ستون فقرات و کمر</strong></a>
+    <a class="body-card" href="#"><span>🫃</span><strong>شکم و لگن</strong></a>
+    <a class="body-card" href="#"><span>🦵</span><strong>مفصل ران</strong></a>
+    <a class="body-card" href="#"><span>🦵</span><strong>زانو</strong></a>
+    <a class="body-card" href="#"><span>🦶</span><strong>ساق و مچ پا</strong></a>
+    <a class="body-card" href="#"><span>🦶</span><strong>پا و انگشتان پا</strong></a>
+    <a class="body-card" href="#"><span>🏃</span><strong>تعادل و راه رفتن</strong></a>
+    <a class="body-card" href="#"><span>🧘</span><strong>کل بدن</strong></a>
+  </section>
+</main>
+<footer>PhysioCare • تمرین‌های فیزیوتراپی</footer>
+<script>
+const labels={easy:'سطح آسان',medium:'سطح متوسط',hard:'سطح سخت'};
+const key=new URLSearchParams(location.search).get('level');
+document.getElementById('levelBadge').textContent=labels[key]||'سطح تمرین';
+</script>
+</body>
+</html>
